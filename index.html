@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-key="titulo_pagina">APT | Aula Privada Técnica</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header class="encabezado">
+        <button class="menu-btn" id="menuToggle" onclick="toggleMenu()">☰</button>
+        <div class="titulo-contenedor">
+            <h1 class="titulo" id="main-title" data-key="titulo_principal" style="font-size: 88%;">Aula Privada Técnica</h1>
+            <img src="logoretro2.png" alt="Logo APT" class="logo-apt" />
+        </div>
+    </header>
+
+    <nav id="menu" class="menu oculto">
+        <div class="menu-fondo">
+            <ul>
+                <li><button class="boton fondo-btn1" onclick="abrirModal('modal1')"><img src="rusia.png" /><span data-key="apt_rusa">APT Rusa</span></button></li>
+                <li><button class="boton fondo-btn2" onclick="abrirModal('modal2')"><img src="brasil.png" /><span data-key="apt_portuguesa">APT Portuguesa</span></button></li>
+                <li><button class="boton fondo-btn3" onclick="abrirModal('modal3')"><img src="alemania.png" /><span data-key="apt_alemana">APT Alemana</span></button></li>
+                <li><button class="boton fondo-btn4" onclick="abrirModal('modal4')"><img src="corea-del-sur (1).png" /><span data-key="apt_coreana">APT Coreana</span></button></li>
+                <li><button class="boton fondo-btn5" onclick="abrirModal('modal5')"><img src="australia (1).png" /><span data-key="apt_australiana">APT Australiana</span></button></li>
+                <li><button class="boton fondo-btn6" onclick="abrirModal('modal6')"><img src="francia (1).png" /><span data-key="apt_francesa">APT Francesa</span></button></li>
+                <li><button class="boton fondo-btn7" onclick="abrirModal('modal7')"><img src="suecia.png" /><span data-key="apt_sueca">APT Sueca</span></button></li>
+                <li><button class="boton fondo-btn8" onclick="abrirModal('modal8')"><img src="china.png" /><span data-key="apt_china">APT China</span></button></li>
+                <li><button class="boton fondo-btn9" onclick="abrirModal('modal9')"><img src="taiwan.png" /><span data-key="apt_taiwanesa">APT Taiwanesa</span></button></li>
+                <li><button class="boton fondo-btn10" onclick="abrirModal('modal10')"><img src="pavo.png" /><span data-key="apt_turca">APT Turca</span></button></li>
+                <li><button class="boton fondo-btn11" onclick="abrirModal('modal11')"><img src="mundo.png" /><span data-key="apt_guatemala">APT Guatemalteca</span></button></li>
+            </ul>
+            <img src="comprobado.png" style="width: 20%; height: auto; margin: auto; padding: 1vh; display: flex; padding-bottom: 0;" />
+        </div>
+    </nav>
+<div id="modal1" class="modal oculto"><div class="modal-contenido fondo1"><img src="rusia.png" /><h2 data-key="modal_apt_rusia">APT | RUSIA</h2><p data-key="proximamente">Visualizar este contenido en Ruso</p><button onclick="window.location.href = 'index.ru.html'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal1')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal2" class="modal oculto"><div class="modal-contenido fondo2"><img src="brasil.png" /><h2 data-key="modal_apt_brasil">APT | BRASIL</h2><p data-key="proximamente">Visualizar este contenido en Portugues</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal2')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal3" class="modal oculto"><div class="modal-contenido fondo3"><img src="alemania.png" /><h2 data-key="modal_apt_alemania">APT | ALEMANIA</h2><p data-key="proximamente">Visualizar este contenido en Aleman</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal3')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal4" class="modal oculto"><div class="modal-contenido fondo4"><img src="corea-del-sur (1).png" /><h2 data-key="modal_apt_corea">APT | COREA</h2><p data-key="proximamente">Visualizar este contenido en Corenao</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal4')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal5" class="modal oculto"><div class="modal-contenido fondo5"><img src="australia (1).png" /><h2 data-key="modal_apt_australia">APT | AUSTRALIA</h2><p data-key="proximamente">Visualizar este contenido en Australiano</p><button onclick="window.location.href = 'index.as.html'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal5')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal6" class="modal oculto"><div class="modal-contenido fondo6"><img src="francia (1).png" /><h2 data-key="modal_apt_francia">APT | FRANCIA</h2><p data-key="proximamente">Visualizar este contenido en Frances</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal6')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal7" class="modal oculto"><div class="modal-contenido fondo7"><img src="suecia.png" /><h2 data-key="modal_apt_suecia">APT | SUECIA</h2><p data-key="proximamente">Visualizar este contenido en Sueco</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal7')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal8" class="modal oculto"><div class="modal-contenido fondo8"><img src="china.png" /><h2 data-key="modal_apt_china">APT | CHINA</h2><p data-key="proximamente">Visualizar este contenido en Chino</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal8')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal9" class="modal oculto"><div class="modal-contenido fondo9"><img src="taiwan.png" /><h2 data-key="modal_apt_taiwan">APT | TAIWAN</h2><p data-key="proximamente">Visualizar este contenido en Taiwanes</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal9')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal10" class="modal oculto"><div class="modal-contenido fondo10"><img src="pavo.png" /><h2 data-key="modal_apt_turquia">APT | TURQUIA</h2><p data-key="proximamente">Visualizar este contenido en Turco</p><button onclick="window.location.href = '#'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal10')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+<div id="modal11" class="modal oculto"><div class="modal-contenido fondo11"><img src="mundo.png" /><h2 data-key="modal_apt_guatemala">APT | GUATEMALA</h2><p data-key="proximamente">Visualizar este contenido en el Idioma Original</p><button onclick="window.location.href = 'index.html'" data-key="cambiar_idioma_btn">Cambiar el Idioma</button><button onclick="cerrarModal('modal11')" data-key="cerrar_modal_idioma">Cerrar</button></div></div>
+    <section class="grupo-botones">
+    <button class="grupo-btn grupo1" onclick="abrirModal('modalGrupo1')" data-key="btn_microsoft">Microsoft</button>
+    <button class="grupo-btn grupo2" onclick="abrirModal('modalGrupo2')" data-key="btn_google">Google</button>
+    <button class="grupo-btn grupo3" onclick="abrirModal('modalGrupo3')" data-key="btn_programacion">Programación</button>
+</section>
+<div id="modalGrupo1" class="modal oculto">
+    <div class="modal-contenido fondo-grupo1">
+        <h2 data-key="titulo_microsoft">Microsoft Software</h2>
+        <ul class="grupo-lista">
+            <li><button onclick="abrirModal('submodal1')"><img src="icons8-editor-de-microsoft-2019-48.png"><span data-key="submodal_publisher">Microsoft Publisher</span></button></li>
+            <li><button onclick="abrirModal('submodal2')"><img src="icons8-formularios-microsoft-2019-48.png"><span data-key="submodal_forms">Microsoft Forms</span></button></li>
+            <li><button onclick="abrirModal('submodal3')"><img src="icons8-microsoft-access-2019-48.png"><span data-key="submodal_access">Microsoft Access</span></button></li>
+            <li><button onclick="abrirModal('submodal4')"><img src="icons8-microsoft-excel-48.png"><span data-key="submodal_excel">Microsoft Excel</span></button></li>
+            <li><button onclick="abrirModal('submodal5')"><img src="icons8-microsoft-word-48.png"><span data-key="submodal_word">Microsoft Word</span></button></li>
+            <li><button onclick="abrirModal('submodal6')"><img src="icons8-proyecto-microsoft-2019-48.png"><span data-key="submodal_project">Microsoft Project</span></button></li>
+            <li><button onclick="abrirModal('submodal7')"><img src="icons8-microsoft-visio-2019-48.png"><span data-key="submodal_visio">Microsoft Visio</span></button></li>
+            <li><button onclick="abrirModal('submodal8')"><img src="icons8-power-bi-2021-48.png"><span data-key="submodal_powerbi">Microsoft Power BI</span></button></li>
+            <li><button onclick="abrirModal('submodal9')"><img src="icons8-microsoft-powerpoint-2019-48.png"><span data-key="submodal_powerpoint">Microsoft PowerPoint</span></button></li>
+            <li><button onclick="abrirModal('submodal10')"><img src="icons8-microsoft-outlook-2019-48.png"><span data-key="submodal_outlook">Microsoft Outlook</span></button></li>
+        </ul>
+        <button class="cerrar-btn" onclick="cerrarModal('modalGrupo1')" data-key="cerrar_btn">Cerrar</button>
+    </div>
+    <div id="submodal1" class="modal oculto">
+        <div class="modal-contenido fondo-sub1">
+            <h2 data-key="submodal_publisher_titulo"><img src="icons8-editor-de-microsoft-2019-48.png" alt="Icono 1">Publisher</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal1')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal2" class="modal oculto">
+        <div class="modal-contenido fondo-sub2">
+            <h2 data-key="submodal_forms_titulo"><img src="icons8-formularios-microsoft-2019-48.png" alt="Icono 2">Forms</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal2')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal3" class="modal oculto">
+        <div class="modal-contenido fondo-sub3">
+            <h2 data-key="submodal_access_titulo"><img src="icons8-microsoft-access-2019-48.png" alt="Icono 3">Access</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal3')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal4" class="modal oculto">
+        <div class="modal-contenido fondo-sub4">
+            <h2 data-key="submodal_excel_titulo"><img src="icons8-microsoft-excel-48.png" alt="Icono 4">Excel</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal4')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal5" class="modal oculto">
+        <div class="modal-contenido fondo-sub5">
+            <h2 data-key="submodal_word_titulo"><img src="icons8-microsoft-word-48.png" alt="Icono 5">Word</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal5')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal6" class="modal oculto">
+        <div class="modal-contenido fondo-sub6">
+            <h2 data-key="submodal_project_titulo"><img src="icons8-proyecto-microsoft-2019-48.png" alt="Icono 6">Project</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal6')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal7" class="modal oculto">
+        <div class="modal-contenido fondo-sub7">
+            <h2 data-key="submodal_visio_titulo"><img src="icons8-microsoft-visio-2019-48.png" alt="Icono 7">Visio</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal7')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal8" class="modal oculto">
+        <div class="modal-contenido fondo-sub8">
+            <h2 data-key="submodal_powerbi_titulo"><img src="icons8-power-bi-2021-48.png" alt="Icono 8">Power BI</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal8')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal9" class="modal oculto">
+        <div class="modal-contenido fondo-sub9">
+            <h2 data-key="submodal_powerpoint_titulo"><img src="icons8-microsoft-powerpoint-2019-48.png" alt="Icono 9">PowerPoint</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal9')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodal10" class="modal oculto">
+        <div class="modal-contenido fondo-sub10">
+            <h2 data-key="submodal_outlook_titulo"><img src="icons8-microsoft-outlook-2019-48.png" alt="Icono 10">Outlook</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodal10')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+</div>
+<div id="modalGrupo2" class="modal oculto">
+    <div class="modal-contenido fondo-grupo2">
+        <h2 data-key="titulo_google">Google Software</h2>
+        <ul class="grupo-lista">
+            <li><button onclick="abrirModal('submodalA')"><img src="icons8-google-docs-48.png"><span data-key="google_docs">Google Documentos</span></button></li>
+            <li><button onclick="abrirModal('submodalB')"><img src="icons8-col-google-48.png"><span data-key="google_col">Google Col</span></button></li>
+            <li><button onclick="abrirModal('submodalC')"><img src="icons8-consola-de-google-firebase-48.png"><span data-key="google_firebase">Google FireBass</span></button></li>
+            <li><button onclick="abrirModal('submodalD')"><img src="icons8-administrador-de-etiquetas-de-google-48.png"><span data-key="google_tag_manager">Google Administrador Etiquetas</span></button></li>
+            <li><button onclick="abrirModal('submodalE')"><img src="icons8-hojas-de-cálculo-48.png"><span data-key="google_sheets">Google hojas de calculo</span></button></li>
+        </ul>
+        <button class="cerrar-btn" onclick="cerrarModal('modalGrupo2')" data-key="cerrar_btn">Cerrar</button>
+    </div>
+    <div id="submodalA" class="modal oculto">
+        <div class="modal-contenido fondo-subA">
+            <h2 data-key="google_docs_titulo"><img src="icons8-google-docs-48.png" alt="Icono A">Google Documentos</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalA')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalB" class="modal oculto">
+        <div class="modal-contenido fondo-subB">
+            <h2 data-key="google_col_titulo"><img src="icons8-col-google-48.png" alt="Icono B">Google Col</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalB')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalC" class="modal oculto">
+        <div class="modal-contenido fondo-subC">
+            <h2 data-key="google_firebase_titulo"><img src="icons8-consola-de-google-firebase-48.png" alt="Icono C">Google FireBass</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalC')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalD" class="modal oculto">
+        <div class="modal-contenido fondo-subD">
+            <h2 data-key="google_admin_etq_titulo"><img src="icons8-administrador-de-etiquetas-de-google-48.png" alt="Icono D">Google Admin ETQ</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalD')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalE" class="modal oculto">
+        <div class="modal-contenido fondo-subE">
+            <h2 data-key="google_calculos_titulo"><img src="icons8-hojas-de-cálculo-48.png" alt="Icono E">Google cálculos</h2>
+            <p data-key="proximamente">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalE')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+</div>
+<div id="modalGrupo3" class="modal oculto">
+    <div class="modal-contenido fondo-grupo3">
+        <h2 data-key="titulo_programacion">Software Programación</h2>
+        <ul class="grupo-lista">
+            <li><button onclick="abrirModal('submodalX1')"><img src="icons8-visual-studio-code-2019-48.png"><span data-key="prog_vscode">Visual Studio Code</span></button></li>
+            <li><button onclick="abrirModal('submodalX2')"><img src="icons8-logotipo-de-c-plus-plus-48.png"><span data-key="prog_cpp">C++</span></button></li>
+            <li><button onclick="abrirModal('submodalX3')"><img src="icons8-python-48.png"><span data-key="prog_python">Python</span></button></li>
+            <li><button onclick="abrirModal('submodalX4')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_1">Proximamente...</span></button></li>
+            <li><button onclick="abrirModal('submodalX5')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_2">Proximamente...</span></button></li>
+            <li><button onclick="abrirModal('submodalX6')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_3">Proximamente...</span></button></li>
+            <li><button onclick="abrirModal('submodalX7')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_4">Proximamente...</span></button></li>
+            <li><button onclick="abrirModal('submodalX8')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_5">Proximamente...</span></button></li>
+            <li><button onclick="abrirModal('submodalX9')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_6">Proximamente...</span></button></li>
+            <li><button onclick="abrirModal('submodalX10')"><img src="icons8-no-48.png"><span data-key="proximamente_btn_7">Proximamente...</span></button></li>
+        </ul>
+        <button class="cerrar-btn" onclick="cerrarModal('modalGrupo3')" data-key="cerrar_btn">Cerrar</button>
+    </div>
+    <div id="submodalX1" class="modal oculto">
+        <div class="modal-contenido fondo-subX1">
+            <h2 data-key="prog_vscode_titulo"><img src="icons8-visual-studio-code-2019-48.png" alt="Icono X1">VIsual Studio Code</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX1')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX2" class="modal oculto">
+        <div class="modal-contenido fondo-subX2">
+            <h2 data-key="prog_cpp_titulo"><img src="icons8-logotipo-de-c-plus-plus-48.png" alt="Icono X2">C++</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX2')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX3" class="modal oculto">
+        <div class="modal-contenido fondo-subX3">
+            <h2 data-key="prog_python_titulo"><img src="icons8-python-48.png" alt="Icono X3">Python</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX3')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX4" class="modal oculto">
+        <div class="modal-contenido fondo-subX4">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX4')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX5" class="modal oculto">
+        <div class="modal-contenido fondo-subX5">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX5')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX6" class="modal oculto">
+        <div class="modal-contenido fondo-subX6">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX6')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX7" class="modal oculto">
+        <div class="modal-contenido fondo-subX7">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX7')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX8" class="modal oculto">
+        <div class="modal-contenido fondo-subX8">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX8')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX9" class="modal oculto">
+        <div class="modal-contenido fondo-subX9">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX9')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+    <div id="submodalX10" class="modal oculto">
+        <div class="modal-contenido fondo-subX10">
+            <h2 data-key="proximamente_h2">Proximamente...</h2>
+            <p data-key="proximamente_parrafo">Proximamente...</p>
+            <button class="cerrar-btn" onclick="cerrarModal('submodalX10')" data-key="cerrar_btn">Cerrar</button>
+        </div>
+    </div>
+</div>
+<section class="buscador-rapido">
+    <h2 class="titulo-buscador" data-key="buscador_titulo">Microsoft Bing</h2>
+    <form id="bingForm" target="_blank" class="formulario-busqueda">
+        <input type="text" name="q" placeholder="Buscar en Microsoft Bing..." class="input-busqueda" required>
+        <button type="button" class="boton-busqueda" id="botonBing" onclick="animarYBuscar()"> 
+            <img src="png-transparent-bing-hd-logo.png" style="width: 45%; display: flex; margin: auto;" />
+        </button>
+    </form>
+    <p class="nota-buscador" data-key="buscador_nota">Accede a información relevante al instante.</p>
+</section>
+<div class="seccion-boton">
+    <button id="abrirBloquesBtn" class="boton-formulario" onclick="abrirModal('bloquesAlternadosModal')" data-key="btn_pilares">
+        <img src="logoretro2.png" class="imagen-club2" />
+        Acceder a los pilares APT
+    </button>
+</div>
+<div id="bloquesAlternadosModal" class="modal oculto">
+    <div class="modal-contenido fondo-club">  
+        <div class="bloques-alternados-interno">
+            <h2 style="color: goldenrod; margin-bottom: 2vh;" data-key="pilares_titulo">Nuestros Pilares</h2>
+            <div class="bloque">
+                <p class="info izquierda" data-key="vision_texto">
+                    Ser reconocidos a nivel <STRONG>internacional</STRONG> como el centro de formación <STRONG>móvil</STRONG> líder en la enseñanza de habilidades técnicas y software esencial.<br><br>
+                    Aspiramos a ser la principal fuente de <STRONG>certificación digital práctica</STRONG> que impulse a miles de profesionales a la vanguardia tecnológica en los mercados de habla hispana y más allá.
+                </p>
+                <h3 class="titulo derecha" data-key="vision_titulo">Nuestra Visión</h3>
+            </div>
+            <div class="bloque">
+                <h3 class="titulo izquierda" data-key="mision_titulo">Nuestra Misión</h3>
+                <p class="info derecha" data-key="mision_texto">
+                    Proveer <STRONG>instrucción técnica de alta calidad</STRONG> y 100% práctica en las herramientas de software más demandadas (Microsoft, Google, Programación).<br><br>
+                    Nos comprometemos a utilizar una metodología <STRONG>accesible y adaptada al entorno móvil</STRONG>, garantizando que cada estudiante adquiera las competencias exactas y relevantes que requiere el mercado laboral.
+                </p>
+            </div>
+            <div class="bloque">
+                <p class="info izquierda" data-key="valores_texto">
+                    Nuestra labor se sustenta en tres pilares inamovibles:<br><br>
+                    <STRONG>1. Excelencia Técnica:</STRONG> Compromiso con el rigor y la calidad del contenido para formar expertos.<br><br>
+                    <STRONG>2. Accesibilidad:</STRONG> La educación debe estar al alcance de todos, por ello somos una plataforma <STRONG>Mobile-First</STRONG>.<br><br>
+                    <STRONG>3. Integridad:</STRONG> Transparencia en los procesos, validez de las certificaciones y honestidad en la formación.
+                </p>
+                <h3 class="titulo derecha" data-key="valores_titulo">Valores APT</h3>
+            </div>
+            <div class="bloque">
+                <h3 class="titulo izquierda" data-key="ventaja_titulo">Ventaja Competitiva</h3>
+                <p class="info derecha" data-key="ventaja_texto">
+                    Nuestra diferencia clave es la <STRONG>especialización móvil total</STRONG>. A diferencia de otras academias, APT está optimizada y diseñada exclusivamente para el aprendizaje en tu smartphone.<br><br>
+                    Esto asegura una <STRONG>experiencia de usuario fluida</STRONG> y sin distracciones, permitiéndote estudiar a profundidad, sin importar dónde te encuentres. <STRONG>Formación técnica en tu bolsillo</STRONG>.
+                </p>
+            </div>
+            <div class="bloque">
+                <p class="info izquierda" data-key="metodologia_texto">
+                    Aplicamos una metodología de <STRONG>Aprendizaje por Dominio (Mastery Learning)</STRONG>, donde el enfoque principal es la práctica intensiva y la repetición dirigida.<br><br>
+                    Cada curso incluye ejercicios diseñados para <STRONG>simular escenarios laborales reales</STRONG>, asegurando que el estudiante no solo conozca el software, sino que pueda aplicarlo eficazmente desde su <STRONG>dispositivo móvil</STRONG>.<br><br>
+                    El dominio es la meta, no la simple asistencia.
+                </p>
+                <h3 class="titulo derecha" data-key="metodologia_titulo">Nuestra Metodología</h3>
+            </div>
+            <div class="bloque">
+                <h3 class="titulo izquierda" data-key="comunidad_titulo">Comunidad y Apoyo</h3>
+                <p class="info derecha" data-key="comunidad_texto">
+                    Al unirte a APT, obtienes acceso al <STRONG>Club Exclusivo</STRONG>, nuestra comunidad privada diseñada para el apoyo mutuo y la mentoría continua.<br><br>
+                    Este espacio es clave para: resolver dudas técnicas con instructores, compartir avances del proyecto y obtener <STRONG>retroalimentación profesional</STRONG> de tus compañeros. <br>
+                    Nunca estudiarás solo.
+                </p>
+            </div>
+            <div class="bloque">
+                <p class="info izquierda" data-key="impacto_texto">
+                    Nuestra formación va más allá del software. Te equipamos con habilidades que se traducen en <STRONG>oportunidades laborales</STRONG> tangibles.<br><br>
+                    Al completar nuestros módulos, no solo obtienes un certificado (válido a partir de 2026), sino que desarrollas una <STRONG>mentalidad técnica</STRONG> y la capacidad de resolver problemas, haciéndote un candidato más competitivo y valioso en cualquier industria.<br><br>
+                    Invierte en tu futuro con tecnología práctica.
+                </p>
+                <h3 class="titulo derecha" data-key="impacto_titulo">Tu Impacto Profesional</h3>
+            </div>
+        </div>
+        <button id="cerrarBloquesBtn" class="cerrar-btn" style="margin-top: 4vh; background-color: #007bff;" data-key="cerrar_pilares">
+            cerrar
+        </button>
+        <img src="comprobado.png" style="width: 20%; padding: 2vh; margin: auto; display: flex;" />
+    </div>
+</div>
+<section class="seccion-boton" id="seccionAccesosRapidos"> 
+    <button class="boton-formulario" onclick="abrirModal('enlacesModal')" data-key="btn_aulas_paga">
+        <img src="logoretro2.png" class="imagen-club2" />
+        Acceder a aulas de paga
+    </button>
+</section>
+<div id="enlacesModal" class="modal oculto">
+    <div class="modal-contenido fondo-enlaces animacion-modal">
+        <img src="logoretro2.png" class="imagen-club2" />
+        <h2 data-key="modal_paga_titulo">APT | DE PAGA</h2>
+        <p data-key="modal_paga_texto">Selecciona la plataforma a la que deseas acceder:</p>
+        <div class="grupo-botones-enlace">
+            <a href="javascript:void(0)" class="enlace-btn enlace-deshabilitado" target="_blank" data-key="enlace_principiante">
+                <img src="logoretro2.png" class="imagen-club2" />Aula Principiante de Paga
+            </a>
+            <a href="javascript:void(0)" class="enlace-btn enlace-deshabilitado" target="_blank" data-key="enlace_intermedio">
+                <img src="logoretro2.png" class="imagen-club2" />Aula Intermedio de Paga
+            </a>
+            <a href="javascript:void(0)" class="enlace-btn enlace-deshabilitado" target="_blank" data-key="enlace_avanzada">
+                <img src="logoretro2.png" class="imagen-club2" />Aula Avanzada de Paga
+            </a>
+        </div>
+        <button class="cerrar-btn" onclick="cerrarModal('enlacesModal')" data-key="btn_cerrar_club">CERRAR</button>
+    </div>
+</div>
+<section class="seccion-clubes" id="seccionClubes">
+    <button class="boton-club" onclick="abrirModal('clubModal')" data-key="btn_aula_gratis">
+        <img src="logoretro2.png" alt="Logo Club" class="imagen-club2">
+        Acceder a mi aula gratis
+    </button>
+</section>
+<div id="clubModal" class="modal-base oculto">
+    <div class="contenido-modal fondo-club animacion-modal">
+        <img src="logoretro2.png" alt="Logo Club" class="imagen-club">
+        <h2 data-key="modal_club_titulo">Acceder a mi Aula</h2>
+        <p data-key="modal_club_texto">Ingresa tu PIN de acceso:</p>
+        <input type="text" id="pinClub" maxlength="12" pattern="\\d{12}" inputmode="numeric" required placeholder="" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+        <div class="botones-club">
+            <button onclick="validarPin()" data-key="btn_ingresar">Ingresar</button>
+            <button onclick="cerrarModal('clubModal')" data-key="btn_cerrar_club_2">Cerrar</button>
+        </div>
+        <div id="resultadoClub" class="mensaje-club"></div>
+    </div>
+</div>
+<section class="seccion-boton">
+    <button class="boton-formulario" onclick="abrirModal('formularioModal')" data-key="btn_registro">
+        <img src="logoretro2.png" alt="Logo Club" class="imagen-club2">Formulario de registros
+    </button>
+</section>
+<div id="formularioModal" class="modal oculto">
+    <div class="modal-contenido fondo-formulario animacion-modal">
+        <h2 data-key="form_titulo">Formulario de Registro</h2>
+        <form action="https://formsubmit.co/manuelguevarachavarria@outlook.es" method="POST" id="formularioRegistro">
+            <input type="hidden" name="_subject" value="Nuevo registro desde Aula Privada Técnica">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://aula-privada-tecnica.github.io/Aula-Privada-T-cnica---APT/">
+            <label data-key="form_nombre">Primer Nombre:</label>
+            <input type="text" name="nombre" required>
+            <label data-key="form_apellido">Apellido:</label>
+            <input type="text" name="apellido" required>
+            <label data-key="form_whatsapp">Número de WhatsApp:</label>
+            <input type="tel" name="whatsapp" inputmode="numeric" pattern="[0-9]{8,15}" maxlength="15" required placeholder="Ej: 12345678" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <label data-key="form_correo">Correo Gmail:</label>
+            <input type="email" name="correo" pattern="^[a-zA-Z0-9._%+-]+@gmail\\.com$" required placeholder="ejemplo@gmail.com">
+            <label data-key="form_fecha">Fecha de inicio del curso:</label>
+            <input type="date" name="fechaInicio" required>
+            <label data-key="form_aplicacion">Aplicación de software:</label>
+            <select style="width: 92%;" name="software" required>
+                <option value="" data-key="select_default">-- Selecciona una opción --</option>
+                <option data-key="opt_publisher">Microsoft Publisher</option>
+                <option data-key="opt_forms">Microsoft Forms</option>
+                <option data-key="opt_access">Microsoft Access</option>
+                <option data-key="opt_excel">Microsoft Excel</option>
+                <option data-key="opt_word">Microsoft Word</option>
+                <option data-key="opt_project">Microsoft Project</option>
+                <option data-key="opt_visio">Microsoft Visio</option>
+                <option data-key="opt_powerbi">Microsoft Power BI</option>
+                <option data-key="opt_powerpoint">Microsoft PowerPoint</option>
+                <option data-key="opt_outlook">Microsoft Outlook</option>
+                <option data-key="opt_gdocs">Google Docs</option>
+                <option data-key="opt_gcol">Google Col</option>
+                <option data-key="opt_gfirebase">Google FireBass</option>
+                <option data-key="opt_gtagmanager">Google Tag Manager</option>
+                <option data-key="opt_gsheets">Google Sheets</option>
+                <option data-key="opt_vscode">VSCode</option>
+                <option data-key="opt_cpp">C++</option>
+                <option data-key="opt_python">Python</option>
+            </select>
+            <label style="padding-top: 1vh;" data-key="form_nivel">Nivel:</label>
+            <select style="width: 92%;" name="nivel" required>
+                <option value="" data-key="select_nivel_default">-- Selecciona tu nivel --</option>
+                <option data-key="nivel_principiante">Principiante</option>
+                <option data-key="nivel_intermedio">Intermedio</option>
+                <option data-key="nivel_avanzado">Avanzado</option>
+                <option data-key="nivel_maestria">Maestría</option>
+                <option data-key="nivel_experto">Experto Profesional</option>
+            </select>
+            <label style="padding-top: 1vh;" data-key="form_mes_nac">Mes de nacimiento:</label>
+            <input type="number" name="mesNacimiento" min="1" max="12" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <label data-key="form_dia_nac">Día de nacimiento:</label>
+            <input type="number" name="diaNacimiento" min="1" max="31" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+            <button type="submit" data-key="btn_enviar">Enviar</button>
+            <button type="button" onclick="cerrarModal('formularioModal')" data-key="btn_cerrar">Cerrar</button>
+        </form>
+    </div>
+</div>
+<div class="bloqueo">
+    <div data-key="bloqueo_titulo">⚠️ Acceso restringido ⚠️</div><br><br>
+    <p data-key="bloqueo_texto1">Esta plataforma está diseñada exclusivamente para teléfonos móviles.</p><br><br>
+    <span>📱</span><br><br>
+    <p data-key="bloqueo_texto2">Por favor, accede desde tu teléfono para continuar.</p>
+</div>
+<footer class="pie">
+    <button onclick="abrirModal('footerModal1')" data-key="footer_nosotros">Nosotros</button>
+    <button onclick="abrirModal('footerModal2')" data-key="footer_contacto">Contacto</button>
+    <button onclick="abrirModal('footerModal3')" data-key="footer_soporte">Soporte</button>
+    <button onclick="abrirModal('footerModal4')" data-key="footer_certificacion">Certificación</button>
+</footer>
+<section class="barra-social">
+    <div class="iconos-sociales">
+        <a href="sites.html" class="icono instagram" title="Instagram"></a>
+        <a href="sites.html" class="icono facebook" title="Facebook"></a>
+        <a href="sites.html" class="icono x" title="X / Twitter"></a>
+        <a href="sites.html" class="icono youtube" title="YouTube"></a>
+        <a href="sites.html" class="icono linkedin" title="LinkedIn"></a>
+        <a href="sites.html" class="icono pinterest" title="Pinterest"></a>
+        <a href="sites.html" class="icono plataforma" title="Plataforma"></a>
+    </div>
+</section>
+<div id="footerModal1" class="modal oculto">
+    <div class="modal-contenido fondo-footer1">
+        <h2 data-key="modal_nosotros_titulo"><img src="logoretro2.png" alt="Logo 1">Nosotros</h2>
+        <p data-key="nosotros_texto">
+            <STRONG>APT | Aula Privada Técnica</STRONG> no es solo una plataforma; es un proyecto educativo fundado por el <STRONG>Téc. Angel Manuel Guevara Chavarría</STRONG> para democratizar la formación técnica de calidad.<br><br>
+            Somos un equipo comprometido con la excelencia, centrado en la enseñanza práctica de software clave, como <STRONG>Microsoft Office</STRONG>, herramientas de <STRONG>Google</STRONG> y fundamentos de <STRONG>Programación</STRONG>.<br><br>
+            Nuestra identidad se basa en el principio de ofrecer <STRONG>instrucción técnica avanzada</STRONG> adaptada a la comodidad del formato móvil, asegurando que la educación esté siempre a tu alcance, sin importar tu ubicación.
+        </p>
+        <button onclick="cerrarModal('footerModal1')" data-key="footer_cerrar_modal">Cerrar</button>
+    </div>
+</div>
+<div id="footerModal2" class="modal oculto">
+    <div class="modal-contenido fondo-footer2">
+        <h2 data-key="modal_contacto_titulo"><img src="logoretro2.png" alt="Logo 2">Contacto</h2>
+        <p data-key="contacto_texto">
+            Para consultas sobre <STRONG>cursos, matrículas o soporte técnico</STRONG>, puedes contactarnos directamente a través de los siguientes canales.<br><br>
+            Priorizamos la comunicación por <STRONG>WhatsApp</STRONG> para una respuesta más rápida y personalizada.<br><br>
+            ¡Estamos listos para ayudarte a iniciar tu formación!
+        </p>
+        <div class="contacto-enlaces">
+            <a href="https://whatsapp.com/channel/0029VbC6thBD38CNMdjAiK3p" target="_blank" class="contacto-btn" style="list-style-type: none; text-decoration: none; color: #25D366;"><img src="icons8-whatsapp-48.png" class="logo-apt" style="padding-left: 1vh;"><span data-key="mi_whatsapp">Mi WhatsApp</span></a><br><br>
+            <a href="mailto:aulaprivadatecnica@outlook.com" class="contacto-btn" style="list-style-type: none; text-decoration: none; color: skyblue;"><img src="icons8-microsoft-outlook-2019-48.png" class="logo-apt" style="padding-left: 1vh;"><span data-key="mi_outlook">Mi Correo Outlook</span></a>
+        </div>
+        <button onclick="cerrarModal('footerModal2')" data-key="footer_cerrar_modal_2">Cerrar</button>
+    </div>
+</div>
+<div id="footerModal3" class="modal oculto">
+    <div class="modal-contenido fondo-footer3">
+        <h2 data-key="modal_soporte_titulo"><img src="logoretro2.png" alt="Logo 3">Soporte</h2>
+        <p data-key="soporte_texto">
+            Nuestro objetivo es garantizar una experiencia de aprendizaje sin interrupciones.<br><br>
+            Si tienes <STRONG>dudas técnicas</STRONG> sobre la plataforma, acceso al club o problemas con el material del curso, nuestro equipo de soporte está disponible.<br><br>
+            En esta sección encontrarás <STRONG>Guías Detalladas</STRONG> y una lista de <STRONG>Preguntas Frecuentes (FAQ)</STRONG> para resolver tus inquietudes al instante. Si no encuentras la solución, utiliza el botón de Contacto.
+        </p>
+        <button onclick="cerrarModal('footerModal3')" data-key="footer_cerrar_modal_3">Cerrar</button>
+    </div>
+</div>
+<div id="footerModal4" class="modal oculto">
+    <div class="modal-contenido fondo-footer4">
+        <h2 data-key="modal_certificacion_titulo"><img src="logoretro2.png" alt="Logo 4">Certificación</h2>
+        <p data-key="certificacion_texto">
+            Los certificados de finalización de cursos de APT estarán disponibles y serán <STRONG>válidos bajo pagos</STRONG> a partir del <STRONG>2 de febrero de 2026</STRONG>.<br><br>
+            La certificación de APT avala la competencia técnica en el software estudiado y fortalece tu perfil profesional.
+        </p>
+        <button onclick="cerrarModal('footerModal4')" data-key="footer_cerrar_modal_4">Cerrar</button>
+    </div>
+</div>
+<footer class="footer-legal">
+    <p>&trade; Téc. Angel Manuel Guevara Chavarría</p>
+    <p><STRONG>2025 - 2026 APT | Aula Privada Técnica.</STRONG><br>&copy; Todos los derechos reservados.</p>
+    <p class="advertencia-legal" style="font-size: 1vh; line-height: 1.5vh;" data-key="advertencia_legal">
+        <STRONG>ADVERTENCIA LEGAL:</STRONG> Este sitio y su contenido (estructura, diseño, código, textos y metodología) están protegidos por las leyes de Propiedad Intelectual e Industrial.<br>
+        <STRONG>Queda estrictamente prohibida</STRONG> la copia, reproducción, distribución, imitación total o parcial, o cualquier apropiación indebida de este material.<br>
+        Cualquier intento de violación a estos derechos será perseguido con el máximo rigor de la ley. Nos reservamos el derecho de iniciar <STRONG>acciones legales inmediatas</STRONG> contra los infractores.
+    </p>
+</footer>
+<div id="anuncioModal" class="modal-anuncio">
+    <div class="contenido-anuncio">
+        <h2 data-key="anuncio_titulo"><STRONG>APT<br><p style="border-bottom: 1px solid #007bff; text-transform: uppercase; font-size: 2vh;">Aula Privada Técnica</p><br><br>anuncia a sus visitantes</STRONG></h2>
+        <p data-key="anuncio_texto">
+            Nuestras clases para cada una de las aulas y todo su contenido estará disponible el: <br><STRONG>Lunes 01 de Junio del 2026</STRONG>.<br><br>
+            Mientras, puedes dar un recorrido a nuestras aulas.
+        </p>
+        <button id="cerrarAnuncio" class="boton-anuncio" data-key="btn_entendido">Entendido</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
